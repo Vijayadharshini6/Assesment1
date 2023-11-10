@@ -1,0 +1,16 @@
+ package asses.Lexi;
+import java.util.Scanner;
+public class Lexi{
+public static void main(String[] args)
+{
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the number of string to entered=");
+  int element=sc.nextInt();
+  for(int i=1;i<=element;i++)
+{
+  System.out.println("Enter the string"+i+":");
+  String[] str=sc.nextLine();
+}
+
+}
+}
