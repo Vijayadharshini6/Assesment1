@@ -1,0 +1,31 @@
+package asses.Jumpled;
+import java.util.Scanner;
+public class Jumpled{
+public static void main(String[] args)
+{
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the number=");
+  String number=sc.nextLine();
+  for(int i=0;i<number.length();i++)
+{
+  int convertin=Integer.parseInt(number.charAt(i));
+  int leftdiffer=0;
+  int rightdiffer=0;
+if(i>0)
+{
+  int leftnum=Integer.parseInt(number.charAt(i-1));
+  leftdiffer=Math.abs(convertin-leftnum);
+}
+if(i<number.length()-1)
+{
+ int rightnum=Integer.parseInt(number.charAt(i+1));
+ rightdiffer=Math.abs(convertin-rightnum);
+}
+if(leftdiffer>1&&right>1)
+{
+ System.out.println(N+"IS NOT JUMBLED NUMBER");
+}
+ System.out.println(N+"IS A JUMBLED NUMBER");
+}
+}
+}
